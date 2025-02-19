@@ -75,8 +75,8 @@ class AlienGame extends Phaser.Scene {
       coinsCaughtPositions.push({ x: coin.x, y: coin.y });
       console.log("Posições das moedas coletadas:", ...coinsCaughtPositions);
 
-      const coinPositionY = Phaser.Math.RND.between(50, 650);
-      coin.setPosition(coinPositionY, 100);
+      const coinPositionX = Phaser.Math.RND.between(50, 650); // gera uma posição X aleatória para a moeda de 50 a 650
+      coin.setPosition(coinPositionX, 100);
       coin.setVisible(true);
     });
   }
